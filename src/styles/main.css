@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#root{
+    display: flex;
+    justify-content: center;
+}
+.app{
+    width: 800px;
+}
+.menu_cards_wrapper{
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu_card_item{
+    border: 2px solid teal;
+    width: 250px;
+    height: 350px;
+    position: relative;
+}
+
+.menu_card_header{
+    border: 2px solid red;
+}
+.menu_card_description{
+    border: 2px solid yellow;
+    position: absolute;
+    bottom: 50px;
+    min-width: 100%;
+    padding: 10px;
+}
+.menu_card_footer{
+    border: 2px solid blue;
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu_card_footer_counter{
+    display: flex;
+}
+.menu_card_footer_counter>button{
+    width: 20px;
+    height: 20px;
+    background: teal;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.menu_card_footer_counter>input{
+    width: 50px;
+}
